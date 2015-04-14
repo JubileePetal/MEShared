@@ -1,7 +1,7 @@
 
 public class Order {
 	
-	String message;
+	private String message;
 	
 	Currency currency;
 	Instrument instrument;
@@ -10,5 +10,10 @@ public class Order {
 		// TODO Auto-generated constructor stub
 
 	}
-
+	
+	public String getMessage() {
+		
+		return message;
+	}
+	
 }
