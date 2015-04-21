@@ -10,7 +10,9 @@ public class Message {
 	
 	}
 
-
+	public void setType(int messageType) {
+		type = messageType;
+	}
 
 	public int getType() {
 		return type;
