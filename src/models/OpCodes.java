@@ -21,6 +21,8 @@ public class OpCodes {
 	public static final int MARKET_DATA = 25;
 	public static final int ORDER = 26;
 	public static final int LOG_IN_ACCEPTED = 27;
+	public static final int LOG_IN_REJECTED = 28;
+	
 	
 	/* User types */
 	public static final int TRADER = 30;
