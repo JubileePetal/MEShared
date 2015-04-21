@@ -2,16 +2,16 @@ package models;
 
 public class Order {
 	
-	int currency;
-	int instrument;	
-	int buyOrSell;
+	private int currency;
+	private int instrument;	
+	private int buyOrSell;
 	
-	String myOwner;
-	int quantity;
-	boolean isActive;
+	private String myOwner;
+	private int quantity;
+	private boolean isActive;
 	
-	long timeEnteredSystem;
-	long timeEnteredOrderBook;
+	private long timeEnteredSystem;
+	private long timeEnteredOrderBook;
 	
 	public Order(long timeEnteredSystem) {
 		
@@ -41,6 +41,11 @@ public class Order {
 	public void setTimeEnteredOrderBook(long time) {
 		timeEnteredOrderBook = time;
 	}
+
+	public int getCurrency() {
+		return currency;
+	}
+
 
 	
 }
