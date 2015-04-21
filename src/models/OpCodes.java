@@ -4,11 +4,8 @@ public class OpCodes {
 
 	/* Instrument types */
 	public static final int SHARE = 0;
-	
-	/* Instrument abbreviation */
-	public static final int ERIC_A = 100;
-	public static final int HM_B = 101;
-	
+
+	/* FIX MAYBE? */
 	/* Currencies */
 	public static final int DOLLAR = 10;
 	
