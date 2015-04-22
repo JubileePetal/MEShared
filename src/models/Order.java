@@ -4,7 +4,7 @@ public class Order {
 	
 	private int currency;
 	private int instrument;	
-	private int buyOrSell;
+	private int orderType;
 	
 	private long id;
 	
@@ -22,10 +22,10 @@ public class Order {
 		
 	}
 	
-	public void setOrderType(int currency, int instrument, int buyOrSell) {
+	public void setOrderType(int currency, int instrument, int orderType) {
 		this.currency = currency;
 		this.instrument = instrument;
-		this.buyOrSell = buyOrSell;
+		this.orderType = orderType;
 	}
 	
 	public void setOrderOwner(String ownerNick) {
@@ -54,6 +54,18 @@ public class Order {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+	
+	public void setToBuyOrder() {
+		orderType = OpCodes.BUY_ORDER;
+	}
+	
+	public void setToSellOrder() {
+		orderType = OpCodes.SELL_ORDER;
+	}
+	
+	public int getOrderType() {
+		return orderType;
 	}
 
 
