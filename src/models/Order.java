@@ -3,7 +3,6 @@ package models;
 public class Order {
 	
 	private int currency;
-	private int instrument;	
 	private int orderType;
 	
 	private long id;
@@ -15,17 +14,19 @@ public class Order {
 	private long timeEnteredSystem;
 	private long timeEnteredOrderBook;
 	
+	private Instrument instrument;
+	
 	public Order() {
 		
 		isActive = false;
 		
 	}
 	
-	public void setOrderType(int currency, int instrument, int orderType) {
+	public void setOrderType(int currency, int orderType) {
 		this.currency = currency;
-		this.instrument = instrument;
 		this.orderType = orderType;
 	}
+	
 	
 	public void setOrderOwner(String ownerNick) {
 		myOwner = ownerNick;
@@ -65,6 +66,14 @@ public class Order {
 	
 	public int getOrderType() {
 		return orderType;
+	}
+
+	public Instrument getInstrument() {
+		return instrument;
+	}
+
+	public void setInstrument(Instrument instrument) {
+		this.instrument = instrument;
 	}
 
 
