@@ -6,6 +6,8 @@ public class Order {
 	private int instrument;	
 	private int buyOrSell;
 	
+	private long id;
+	
 	private String myOwner;
 	private int quantity;
 	private boolean isActive;
@@ -44,6 +46,14 @@ public class Order {
 
 	public int getCurrency() {
 		return currency;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 
