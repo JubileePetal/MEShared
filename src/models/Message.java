@@ -3,7 +3,7 @@ package models;
 public class Message {
 
 	private int type;
-	private String message;
+	private String json;
 
 
 	public Message() {
@@ -21,15 +21,15 @@ public class Message {
 
 
 
-	public String getMessage() {
-		return message;
+	public String getJson() {
+		return json;
 	}
 	
 
 
 
-	public void setMessage(String message) {
-		this.message = message;
+	public void setJson(String json) {
+		this.json = json;
 	}
 
 	
