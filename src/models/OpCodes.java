@@ -3,7 +3,7 @@ package models;
 public class OpCodes {
 
 	/* Instrument types */
-	public static final int SHARE = 0;
+	public static final int STOCK = 0;
 	
 	/* Instrument abbreviation */
 	public static final int ERIC_A = 100;
