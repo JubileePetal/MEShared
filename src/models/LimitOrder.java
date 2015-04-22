@@ -1,12 +1,20 @@
 package models;
 
-public class LimitOrder {
+public class LimitOrder extends Order{
 
-	double price;
+	private Double price;
 	
 	public LimitOrder() {
-		//super();
+		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+
+	public void setPrice(Double price) {
+		this.price = price;
 	}
 
 }

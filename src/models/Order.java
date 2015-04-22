@@ -15,10 +15,9 @@ public class Order {
 	private long timeEnteredSystem;
 	private long timeEnteredOrderBook;
 	
-	public Order(long timeEnteredSystem) {
+	public Order() {
 		
 		isActive = false;
-		this.timeEnteredSystem = timeEnteredSystem;
 		
 	}
 	
