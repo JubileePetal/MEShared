@@ -2,31 +2,28 @@ package models;
 
 public class Order {
 	
-	private int currency;
-	private int orderType;
-	
 	private long id;
+	
+	private Instrument instrument;
+	private int currency;
+	private int buyOrSell;
+	private int typeOfOrder;
 	
 	private String myOwner;
 	private int quantity;
 	private boolean isActive;
+	private double price;
 	
 	private long timeEnteredSystem;
 	private long timeEnteredOrderBook;
 	
-	private Instrument instrument;
+
 	
 	public Order() {
 		
 		isActive = false;
 		
-	}
-	
-	public void setOrderType(int currency, int orderType) {
-		this.currency = currency;
-		this.orderType = orderType;
-	}
-	
+	}	
 	
 	public void setOrderOwner(String ownerNick) {
 		myOwner = ownerNick;
@@ -57,15 +54,15 @@ public class Order {
 	}
 	
 	public void setToBuyOrder() {
-		orderType = OpCodes.BUY_ORDER;
+		buyOrSell = OpCodes.BUY_ORDER;
 	}
 	
 	public void setToSellOrder() {
-		orderType = OpCodes.SELL_ORDER;
+		buyOrSell = OpCodes.SELL_ORDER;
 	}
 	
-	public int getOrderType() {
-		return orderType;
+	public int isBuyOrSell() {
+		return buyOrSell;
 	}
 
 	public Instrument getInstrument() {
@@ -74,6 +71,22 @@ public class Order {
 
 	public void setInstrument(Instrument instrument) {
 		this.instrument = instrument;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public int getTypeOfOrder() {
+		return typeOfOrder;
+	}
+
+	public void setTypeOfOrder(int typeOfOrder) {
+		this.typeOfOrder = typeOfOrder;
 	}
 
 
