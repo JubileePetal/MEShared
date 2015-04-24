@@ -28,13 +28,17 @@ public class OpCodes {
 	public static final int ORDER = 26;
 	public static final int LOG_IN_ACCEPTED = 27;
 	public static final int LOG_IN_REJECTED = 28;
-	
-	
+		
 	/* User types */
 	public static final int TRADER = 30;
 	public static final int REGULATOR = 31;
 	public static final int ISVR = 32;
 	public static final int ADMIN = 33;
+	
+	/* Order types */
+	public static final int MARKET_ORDER = 40;
+	public static final int LIMIT_ORDER = 41;
+	public static final int ICEBERG_ORDER = 42;
 	
 }
 
