@@ -17,13 +17,23 @@ public class Order {
 	private long timeEnteredSystem;
 	private long timeEnteredOrderBook;
 	
-
-	
 	public Order() {
 		
 		isActive = false;
 		
-	}	
+	}
+	
+	public long getTimeEnteredOrderBook() {
+		return timeEnteredOrderBook;
+	}
+	
+	public long getTimeEntered() {
+		return timeEnteredSystem;
+	}
+	
+	public boolean isActive() {
+		return isActive;
+	}
 	
 	public void setOrderOwner(String ownerNick) {
 		myOwner = ownerNick;
