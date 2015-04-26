@@ -47,8 +47,6 @@ public class Order {
 		this.quantity = orderQuantity;
 	}
 	
-	
-	
 	public int getQuantity() {
 		return quantity;
 	}
