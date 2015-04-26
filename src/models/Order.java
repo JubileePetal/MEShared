@@ -1,6 +1,6 @@
 package models;
 
-public class Order {
+public class Order implements Cloneable {
 	
 	private long id;
 	
@@ -107,6 +107,13 @@ public class Order {
 		this.typeOfOrder = typeOfOrder;
 	}
 
+	public Object clone(){  
+	    try{  
+	        return super.clone();  
+	    }catch(Exception e){ 
+	        return null; 
+	    }
+	}
 
 	
 }
