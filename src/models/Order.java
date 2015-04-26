@@ -47,6 +47,12 @@ public class Order {
 		this.quantity = orderQuantity;
 	}
 	
+	
+	
+	public int getQuantity() {
+		return quantity;
+	}
+
 	public void activateOrder() {
 		isActive = true;
 	}
