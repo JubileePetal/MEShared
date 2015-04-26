@@ -39,6 +39,10 @@ public class Order {
 		myOwner = ownerNick;
 	}
 	
+	public String getMyOwner() {
+		return myOwner;
+	}
+
 	public void setOrderQuantity(int orderQuantity) {
 		this.quantity = orderQuantity;
 	}
