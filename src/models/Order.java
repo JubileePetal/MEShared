@@ -18,9 +18,11 @@ public class Order implements Cloneable {
 	private long timeEnteredOrderBook;
 	
 	public Order() {
-		
 		isActive = false;
-		
+	}
+	
+	public void setTimeEnteredSystem(long time) {
+		timeEnteredSystem = time;
 	}
 	
 	public long getTimeEnteredOrderBook() {

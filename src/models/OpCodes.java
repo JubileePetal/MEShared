@@ -29,6 +29,7 @@ public class OpCodes {
 	public static final int ORDER_CONFIRMED = 266;
 	public static final int LOG_IN_ACCEPTED = 27;
 	public static final int LOG_IN_REJECTED = 28;
+	public static final int ORDER_UPDATE = 277;
 		
 	/* User types */
 	public static final int TRADER = 30;
