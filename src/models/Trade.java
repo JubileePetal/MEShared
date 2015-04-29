@@ -10,7 +10,8 @@ public class Trade {
 	private String seller;
 
 	private int quantity;
-	private double price; 
+	private double price;
+	private Instrument instrument;
 
 	public double getPrice() {
 		return price;
@@ -70,6 +71,14 @@ public class Trade {
 
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
+	}
+
+	public Instrument getInstrument() {
+		return instrument;
+	}
+
+	public void setInstrument(Instrument instrument) {
+		this.instrument = instrument;
 	}
 	
 	
