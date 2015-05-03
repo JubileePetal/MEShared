@@ -23,7 +23,8 @@ public class OpCodes {
 	public static final int LOG_OUT = 21;
 	public static final int BUY_ORDER = 22;
 	public static final int SELL_ORDER = 23;
-	public static final int TRADE = 24;
+	public static final int PARTIAL_TRADE = 24;
+	//public static final int TRADE = 24;
 	public static final int MARKET_DATA = 25;
 	public static final int ORDER = 26;
 	public static final int ORDER_CONFIRMED = 266;
@@ -41,6 +42,8 @@ public class OpCodes {
 	public static final int MARKET_ORDER = 40;
 	public static final int LIMIT_ORDER = 41;
 	public static final int ICEBERG_ORDER = 42;
+
+
 	
 }
 

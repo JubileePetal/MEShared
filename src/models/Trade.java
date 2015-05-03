@@ -3,6 +3,30 @@ package models;
 public class Trade {
 
 	private long tradeID;
+	private PartialTrade buyPartial;
+	private PartialTrade sellPartial;
+
+	public long getTradeID() {
+		return tradeID;
+	}
+	public void setTradeID(long tradeID) {
+		this.tradeID = tradeID;
+	}
+	public PartialTrade getBuyPartial() {
+		return buyPartial;
+	}
+	public void setBuyPartial(PartialTrade buyPartial) {
+		this.buyPartial = buyPartial;
+	}
+	public PartialTrade getSellPartial() {
+		return sellPartial;
+	}
+	public void setSellPartial(PartialTrade sellPartial) {
+		this.sellPartial = sellPartial;
+	}
+	
+	/*
+	
 	private long buyOrderID;
 	private long selOrderID;
 	
@@ -82,5 +106,6 @@ public class Trade {
 	}
 	
 	
+*/
 
 }
