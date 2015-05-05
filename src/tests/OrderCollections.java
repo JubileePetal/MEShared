@@ -1,6 +1,7 @@
 package tests;
 
 import java.util.ArrayList;
+import java.util.UUID;
 
 import models.Instrument;
 import models.OpCodes;
@@ -140,12 +141,55 @@ public final class OrderCollections {
 		return orderList;
 	}
 	
+
+	public static ArrayList<Order> fiveEqualBuys() {
+		
+		ArrayList<Order> orderList = new ArrayList<Order>();
+		
+		Instrument instrument = new Instrument();
+		instrument.setAbbreviation("ERB");
+		instrument.setName("Ericsson B");
+		instrument.setType(OpCodes.SHARE);
+		
+		for(int i = 0; i < 5; i++) {
+			Order order = new Order();
+			order.setPrice(10.0);
+			order.setOrderQuantity(10);
+			order.setId(i);
+			order.setInstrument(instrument);
+			order.setOrderOwner(UUID.randomUUID().toString());
+			order.setTimeEnteredSystem(0);
+			order.setToBuyOrder();
+			order.setTypeOfOrder(OpCodes.LIMIT_ORDER);
+			orderList.add(order);
+		}
+		
+		return orderList;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
+	public static ArrayList<Order> fiveEqualSell() {
+		
+		ArrayList<Order> orderList = new ArrayList<Order>();
+		
+		Instrument instrument = new Instrument();
+		instrument.setAbbreviation("ERB");
+		instrument.setName("Ericsson B");
+		instrument.setType(OpCodes.SHARE);
+		
+		for(int i = 0; i < 5; i++) {
+			Order order = new Order();
+			order.setPrice(10.0);
+			order.setOrderQuantity(10);
+			order.setId(i);
+			order.setInstrument(instrument);
+			order.setOrderOwner(UUID.randomUUID().toString());
+			order.setTimeEnteredSystem(0);
+			order.setToSellOrder();
+			order.setTypeOfOrder(OpCodes.LIMIT_ORDER);
+			orderList.add(order);
+		}
+		
+		return orderList;
+	}
+
 }
