@@ -29,6 +29,28 @@ public final class OrderCollections {
 		return a;
 	}
 	
+	
+	public static Order simpleSellOrderNoMatch() {
+		
+		Instrument instrument = new Instrument();
+		instrument.setAbbreviation("ERB");
+		instrument.setName("Ericsson B");
+		instrument.setType(OpCodes.SHARE);
+		
+		Order a = new Order();
+		a.setPrice(100.0);
+		a.setOrderQuantity(100);
+		a.setTimeEnteredOrderBook(0);
+		a.setId(0);
+		a.setInstrument(instrument);
+		a.setOrderOwner("Test");
+		a.setTimeEnteredSystem(0);
+		a.setToSellOrder();
+		a.setTypeOfOrder(OpCodes.LIMIT_ORDER);
+	
+		return a;
+	}
+	
 	public static Order simpleBuyOrder() {
 		
 		Instrument instrument = new Instrument();
@@ -117,4 +139,13 @@ public final class OrderCollections {
 		
 		return orderList;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
