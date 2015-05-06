@@ -30,7 +30,6 @@ public final class OrderCollections {
 		return a;
 	}
 	
-	
 	public static Order simpleSellOrderNoMatch() {
 		
 		Instrument instrument = new Instrument();
@@ -141,7 +140,6 @@ public final class OrderCollections {
 		return orderList;
 	}
 	
-
 	public static ArrayList<Order> fiveEqualBuys() {
 		
 		ArrayList<Order> orderList = new ArrayList<Order>();
