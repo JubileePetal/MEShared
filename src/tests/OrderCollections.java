@@ -30,7 +30,7 @@ public final class OrderCollections {
 		return a;
 	}
 	
-	public static Order simpleSellOrderNoMatch() {
+	public static Order simpleSellOrderNewPrice() {
 		
 		Instrument instrument = new Instrument();
 		instrument.setAbbreviation("ERB");
@@ -190,4 +190,30 @@ public final class OrderCollections {
 		return orderList;
 	}
 
+	
+	
+	public static ArrayList<Order> fiveEqualBuysNewPrice() {
+		
+		ArrayList<Order> orderList = new ArrayList<Order>();
+		
+		Instrument instrument = new Instrument();
+		instrument.setAbbreviation("ERB");
+		instrument.setName("Ericsson B");
+		instrument.setType(OpCodes.SHARE);
+		
+		for(int i = 0; i < 5; i++) {
+			Order order = new Order();
+			order.setPrice(1.0);
+			order.setOrderQuantity(100);
+			order.setId(i);
+			order.setInstrument(instrument);
+			order.setOrderOwner(UUID.randomUUID().toString());
+			order.setTimeEnteredSystem(0);
+			order.setToBuyOrder();
+			order.setTypeOfOrder(OpCodes.LIMIT_ORDER);
+			orderList.add(order);
+		}
+		
+		return orderList;
+	}
 }
