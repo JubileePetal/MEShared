@@ -3,6 +3,7 @@ package models;
 public class Trade {
 
 	private long tradeID;
+	private long tradeMadeTime;
 	private PartialTrade buyPartial;
 	private PartialTrade sellPartial;
 
@@ -23,6 +24,12 @@ public class Trade {
 	}
 	public void setSellPartial(PartialTrade sellPartial) {
 		this.sellPartial = sellPartial;
+	}
+	public long getTradeMadeTime() {
+		return tradeMadeTime;
+	}
+	public void setTradeMadeTime(long tradeMadeTime) {
+		this.tradeMadeTime = tradeMadeTime;
 	}
 	
 	/*
