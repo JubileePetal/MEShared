@@ -37,6 +37,7 @@ public class OpCodes {
 	public static final int REGULATOR = 31;
 	public static final int ISVR = 32;
 	public static final int ADMIN = 33;
+	public static final int BOT = 34;
 	
 	/* Order types */
 	public static final int MARKET_ORDER = 40;
