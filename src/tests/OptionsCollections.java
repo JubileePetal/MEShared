@@ -30,13 +30,21 @@ public final class OptionsCollections {
 		put1.setInstrument(OpNames.INSTRUMENT1);
 		put1.setType(OpCodes.PUT_OPTION);
 		
+		Option put2 = new Option();
+		put2.setStrikePrice(9.0);
+		put2.setTheoreticPrice(2.0);
+		put2.setTimeToMaturity(0.25);
+		put2.setInstrument(OpNames.INSTRUMENT2);
+		put2.setType(OpCodes.PUT_OPTION);
+		
 		
 		ArrayList<Option> options = new ArrayList<Option>();
 		options.add(call1);
 		options.add(call2);
-		options.add(put1);		
+		options.add(put1);	
+		options.add(put2);
 		
 		return options;
 	}
-
+	
 }
