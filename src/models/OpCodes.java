@@ -45,7 +45,11 @@ public class OpCodes {
 	public static final int MARKET_ORDER = 40;
 	public static final int LIMIT_ORDER = 41;
 	public static final int ICEBERG_ORDER = 42;
-
+	
+	/*Option types*/
+	public static final int CALL_OPTION = 50;
+	public static final int PUT_OPTION = 51;
+	
 
 	
 }
