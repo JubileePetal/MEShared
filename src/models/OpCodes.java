@@ -31,6 +31,7 @@ public class OpCodes {
 	public static final int LOG_IN_ACCEPTED = 27;
 	public static final int LOG_IN_REJECTED = 28;
 	public static final int ORDER_ADDED = 277;
+	public static final int ANALYTICS = 288;
 		
 	/* User types */
 	public static final int TRADER = 30;
@@ -38,6 +39,7 @@ public class OpCodes {
 	public static final int ISVR = 32;
 	public static final int ADMIN = 33;
 	public static final int BOT = 34;
+	public static final int ALGO_BOT = 35;
 	
 	/* Order types */
 	public static final int MARKET_ORDER = 40;
