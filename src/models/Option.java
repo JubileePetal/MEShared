@@ -9,7 +9,8 @@ public class Option {
 	private Double		delta;
 	private Double		gamma;
 	private int 		type;
-;
+	private long 		id;
+
 	
 	
 	public Option() {
@@ -72,6 +73,15 @@ public class Option {
 		this.gamma = gamma;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
+	
 
 	
 	
