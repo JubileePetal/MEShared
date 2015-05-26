@@ -6,7 +6,11 @@ public class Option {
 	private double 	strikePrice;
 	private double 	timeToMaturity;
 	private double 	theoreticPrice;
-	private int 	type;
+	private Double		delta;
+	private Double		gamma;
+	private int 		type;
+;
+	
 	
 	public Option() {
 		// TODO Auto-generated constructor stub
@@ -50,6 +54,22 @@ public class Option {
 
 	public void setInstrument(String instrument) {
 		this.instrument = instrument;
+	}
+
+	public Double getDelta() {
+		return delta;
+	}
+
+	public void setDelta(Double delta) {
+		this.delta = delta;
+	}
+
+	public Double getGamma() {
+		return gamma;
+	}
+
+	public void setGamma(Double gamma) {
+		this.gamma = gamma;
 	}
 
 
