@@ -33,8 +33,8 @@ public final class OptionsCollections {
 		Option put2 = new Option();
 		put2.setStrikePrice(9.0);
 		put2.setTheoreticPrice(2.0);
-		put2.setTimeToMaturity(0.25);
-		put2.setInstrument(OpNames.INSTRUMENT2);
+		put2.setTimeToMaturity(0.5);
+		put2.setInstrument(OpNames.INSTRUMENT1);
 		put2.setType(OpCodes.PUT_OPTION);
 		
 		

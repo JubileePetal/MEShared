@@ -50,7 +50,12 @@ public class OpCodes {
 	public static final int CALL_OPTION = 50;
 	public static final int PUT_OPTION = 51;
 	
-
+	
+	/*Object Changed in Instrument State*/
+	public static final int ORDERS_CHANGED 	= 61;
+	public static final int TRADES_CHANGED 	= 62;
+	public static final int MD_CHANGED 		= 63;
+	public static final int OPTIONS_CHANGED = 64;
 	
 }
 
