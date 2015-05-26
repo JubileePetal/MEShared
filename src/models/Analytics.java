@@ -9,6 +9,7 @@ public class Analytics {
 	private Double spotPrice;
 	private Double rateOfReturn;
 	private Double ewmaVol;
+	private String instrumentName;
 	private ArrayList<Option> options = new ArrayList<Option>();
 
 	public Double getSMA() {
@@ -54,6 +55,14 @@ public class Analytics {
 
 	public void setEwmaVol(Double ewmaVol) {
 		this.ewmaVol = ewmaVol;
+	}
+
+	public String getInstrumentName() {
+		return instrumentName;
+	}
+
+	public void setInstrumentName(String instrumentName) {
+		this.instrumentName = instrumentName;
 	}
 	
 }
