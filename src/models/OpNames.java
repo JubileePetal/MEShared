@@ -8,4 +8,6 @@ public final class OpNames {
 	public static final String INSTRUMENT2 		= "Sailor Moon"; 
 	public static final String INSTRUMENT2_ABB 	= "SM"; 
 
+	/*Usernames*/
+	public static final String ALGORITHM_BOT 		= "Algorithm Bot"; 
 }
