@@ -17,8 +17,7 @@ public final class OptionsCollections {
 		call1.setTimeToMaturity(0.25);
 		call1.setInstrument(OpNames.INSTRUMENT1);
 		call1.setType(OpCodes.CALL_OPTION);
-		call1.setStatus(OpCodes.SELL_OPTION);
-		
+		call1.setStatus(OpCodes.SELL_OPTION);		
 		
 		Option call11 = new Option();
 		call11.setId(122);
@@ -52,6 +51,7 @@ public final class OptionsCollections {
 		
 		
 		Option put1 = new Option();
+		put1.setId(14);
 		put1.setStrikePrice(1099.0);
 		put1.setTheoreticPrice(2.0);
 		put1.setTimeToMaturity(0.25);
@@ -62,7 +62,7 @@ public final class OptionsCollections {
 		
 		Option put11 = new Option();
 		put11.setId(144);
-		put11.setStrikePrice(9.0);
+		put11.setStrikePrice(1101.0);
 		put11.setTheoreticPrice(2.0);
 		put11.setTimeToMaturity(0.25);
 		put11.setInstrument(OpNames.INSTRUMENT1);
@@ -77,6 +77,7 @@ public final class OptionsCollections {
 		put2.setTimeToMaturity(0.5);
 		put2.setInstrument(OpNames.INSTRUMENT1);
 		put2.setType(OpCodes.PUT_OPTION);
+		put2.setType(OpCodes.SELL_OPTION);
 		
 		
 		ArrayList<Option> options = new ArrayList<Option>();
