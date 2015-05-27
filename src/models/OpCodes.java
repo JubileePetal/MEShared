@@ -48,7 +48,10 @@ public class OpCodes {
 	
 	/*Option types*/
 	public static final int CALL_OPTION = 50;
-	public static final int PUT_OPTION = 51;
+	public static final int PUT_OPTION 	= 51;
+	public static final int BUY_OPTION	= 52;
+	public static final int SELL_OPTION = 53;
+	
 	
 	
 	/*Object Changed in Instrument State*/

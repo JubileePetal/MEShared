@@ -2,14 +2,16 @@ package models;
 
 public class Option {
 	
-	private String	instrument;
-	private double 	strikePrice;
-	private double 	timeToMaturity;
-	private double 	theoreticPrice;
+	private String		instrument;
+	private double 		strikePrice;
+	private double 		timeToMaturity;
+	private double 		theoreticPrice;
 	private Double		delta;
 	private Double		gamma;
 	private int 		type;
-	private long 		id;
+	private int 		id;
+	private int 		status;
+	
 
 	
 	
@@ -73,16 +75,24 @@ public class Option {
 		this.gamma = gamma;
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
 	}
 	
 	
-
+	
 	
 	
 }
