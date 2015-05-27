@@ -93,5 +93,40 @@ public final class OptionsCollections {
 		
 		return options;
 	}
+
+	public static ArrayList<Option> tinyOptionsSet() {
+		
+		ArrayList<Option> optionSet = new ArrayList<Option>();
+		
+		Option call1 = new Option();
+		call1.setId(12);
+		call1.setStrikePrice(55.0);
+		call1.setTimeToMaturity(0.25);
+		call1.setDelta(0.533);
+		call1.setInstrument(OpNames.INSTRUMENT1);
+		call1.setType(OpCodes.CALL_OPTION);
+
+		Option call2 = new Option();
+		call2.setId(13);
+		call2.setStrikePrice(45.0);
+		call2.setTimeToMaturity(0.416666667);
+		call2.setDelta(0.468);
+		call2.setInstrument(OpNames.INSTRUMENT1);
+		call2.setType(OpCodes.CALL_OPTION);
+		
+		Option put1 = new Option();
+		put1.setId(22);
+		put1.setStrikePrice(56.0);
+		put1.setTimeToMaturity(0.166666667);
+		put1.setDelta(-0.508);
+		put1.setInstrument(OpNames.INSTRUMENT1);
+		put1.setType(OpCodes.PUT_OPTION);
+		
+		optionSet.add(call1);
+		optionSet.add(call2);
+		optionSet.add(put1);
+
+		return optionSet;
+	}
 	
 }

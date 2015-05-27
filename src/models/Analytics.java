@@ -64,5 +64,9 @@ public class Analytics {
 	public void setInstrumentName(String instrumentName) {
 		this.instrumentName = instrumentName;
 	}
+
+	public ArrayList<Option> getOptions() {
+		return options;
+	}
 	
 }
