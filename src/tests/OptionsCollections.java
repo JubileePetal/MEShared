@@ -10,18 +10,14 @@ public final class OptionsCollections {
 	
 	public static ArrayList<Option> smallOptionsSet(){
 		Option call1 = new Option();
-<<<<<<< HEAD
+
 		call1.setId(12);
-		call1.setStrikePrice(10.0);
-=======
 		call1.setStrikePrice(1098.0);
->>>>>>> c0eae77d0dae85d82ad6f5cfaf023d0de7f9cd23
 		call1.setTheoreticPrice(2.0);
 		call1.setTimeToMaturity(0.25);
 		call1.setInstrument(OpNames.INSTRUMENT1);
 		call1.setType(OpCodes.CALL_OPTION);
-		call1.setStatus(OpCodes.SELL_OPTION);
-		
+		call1.setStatus(OpCodes.SELL_OPTION);		
 		
 		Option call11 = new Option();
 		call11.setId(122);
@@ -34,12 +30,10 @@ public final class OptionsCollections {
 		
 		
 		Option call2 = new Option();
-<<<<<<< HEAD
+
 		call2.setId(13);
 		call2.setStrikePrice(11.0);
-=======
 		call2.setStrikePrice(1102.0);
->>>>>>> c0eae77d0dae85d82ad6f5cfaf023d0de7f9cd23
 		call2.setTheoreticPrice(2.0);
 		call2.setTimeToMaturity(0.25);
 		call2.setInstrument(OpNames.INSTRUMENT1);
@@ -57,12 +51,9 @@ public final class OptionsCollections {
 		
 		
 		Option put1 = new Option();
-<<<<<<< HEAD
+
 		put1.setId(14);
-		put1.setStrikePrice(9.0);
-=======
 		put1.setStrikePrice(1099.0);
->>>>>>> c0eae77d0dae85d82ad6f5cfaf023d0de7f9cd23
 		put1.setTheoreticPrice(2.0);
 		put1.setTimeToMaturity(0.25);
 		put1.setInstrument(OpNames.INSTRUMENT1);
@@ -81,12 +72,9 @@ public final class OptionsCollections {
 		
 		
 		Option put2 = new Option();
-<<<<<<< HEAD
+
 		put2.setId(15);
-		put2.setStrikePrice(9.0);
-=======
 		put2.setStrikePrice(1101.0);
->>>>>>> c0eae77d0dae85d82ad6f5cfaf023d0de7f9cd23
 		put2.setTheoreticPrice(2.0);
 		put2.setTimeToMaturity(0.5);
 		put2.setInstrument(OpNames.INSTRUMENT1);
